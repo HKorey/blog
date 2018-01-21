@@ -3,6 +3,9 @@ package com.hquery.blog;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+/**
+ * @author hquery
+ */
 @SpringBootApplication
 public class BlogApplication {
 
