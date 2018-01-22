@@ -24,7 +24,8 @@ public class MetasServiceImpl implements MetasService {
     }
 
     @Override
-    public MetasDO findOne(Long aLong) {
-        return null;
+    public MetasDO selectByPrimaryKey(Long id) {
+        return metasMapper.selectByPrimaryKey(id);
     }
+
 }

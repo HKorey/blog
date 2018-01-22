@@ -16,7 +16,7 @@
         <div class="post-lists-body">
             <div class="post-list-item" th:each="a :${articles}">
                 <div class="post-list-item-container">
-                    <div class="item-thumb bg-deepgrey" th:style="'background-image:url('+${#httpServletRequest.getContextPath()}+${a.thumb_img}+');'"></div>
+                    <div class="item-thumb bg-deepgrey" th:style="'background-image:url('+${#httpServletRequest.getContextPath()}+${a.thumbImg}+');'"></div>
                     <a th:href="@{'/pages/article/'+${a.id}}">
                         <div class="item-desc">
                             <p class="text-overflow" style="width:200px;" th:text="${a.content}"> </p>

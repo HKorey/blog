@@ -17,5 +17,10 @@ public interface MetasService {
      */
     List<MetasDO> queryByType(String type);
 
-    MetasDO findOne(Long aLong);
+    /**
+     * selectByPrimaryKey
+     * @param id
+     * @return
+     */
+    MetasDO selectByPrimaryKey(Long id);
 }

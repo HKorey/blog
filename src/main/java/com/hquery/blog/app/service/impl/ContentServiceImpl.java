@@ -24,4 +24,9 @@ public class ContentServiceImpl implements ContentService {
         ContentDOExample example = new ContentDOExample();
         return contentMapper.selectByExample(example);
     }
+
+    @Override
+    public ContentDO selectByPrimaryKey(Long id) {
+        return contentMapper.selectByPrimaryKey(id);
+    }
 }

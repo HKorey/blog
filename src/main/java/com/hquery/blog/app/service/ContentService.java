@@ -10,6 +10,16 @@ import java.util.List;
  */
 public interface ContentService {
 
+    /**
+     * 查出所有Content
+     * @return
+     */
     List<ContentDO> queryAll();
 
+    /**
+     * 根据主键查询
+     * @param id
+     * @return
+     */
+    ContentDO selectByPrimaryKey(Long id);
 }
