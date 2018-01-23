@@ -105,3 +105,5 @@ logs/
 #web.xml
 #log4j.xml
 #sofa-config.properties
+
+application-prd.properties
