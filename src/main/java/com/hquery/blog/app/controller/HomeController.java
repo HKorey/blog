@@ -1,5 +1,6 @@
 package com.hquery.blog.app.controller;
 
+import com.hquery.blog.PostDataService;
 import com.hquery.blog.app.enums.MetaType;
 import com.hquery.blog.app.model.ContentDO;
 import com.hquery.blog.app.model.MetasDO;
@@ -42,7 +43,7 @@ public class HomeController extends BaseController {
 
     @ResponseBody
     @RequestMapping("/test")
-    public Map<String, String> test() {
+    public Map<String, String> test() throws Exception {
         Map<String, String> map = new HashMap<>(2);
         map.put("ret", String.valueOf(new Random().nextInt()));
         return map;
